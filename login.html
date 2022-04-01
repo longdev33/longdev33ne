@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<title>LOGIN</title>
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="login.css"
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="./font/fontawesome-free-6.0.0-web/css/all.css"
+
+
+</head>
+<body>
+    <header class="longdz">
+        <a class="logo" href="HTML.html"><img src="logo51.jpg" alt="đây là logo"></a>
+
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="./HTML.html">SHOP <i class="fas fa-angle-down"></i></a>
+                    <ul class="subnav">
+                        <li><a href="./top.html">TOP</a></li>
+                        <li><a href="./bottom.html">BOTTOM</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="./Sale1.html">SALE <i class="fas fa-angle-down"></i></a>
+                    
+                </li>
+                <li><a href="./NEW.html">NEWS <i class="fas fa-angle-down"></i></a></li>
+                <li><a href="./CONTACT.html">CONTACT <i class="fas fa-angle-down"></i></a></li>
+                <li><a href="./ABOUT.html">ABOUT <i class="fas fa-angle-down"></i></a></li>
+               
+            </ul>
+            <div class="login">
+                <button class="user"><a href="./login.html"><i class="fas fa-user"></i></a></button>
+                <button class="user"><a href="./giohang.html"><i class="fa-solid fa-cart-arrow-down"></i></a></button>
+                <div class="searchhh">  
+                    <input name="q" class="search-input" placeholder="Tìm kiếm..." value="" type="text" required="required">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>                
+                    </button>		
+                </div>  
+            </div>
+        </div>
+        
+    </header>
+    <div id="wrapper">
+        <script language="javascript" src="login.js"></script>
+        <form action=""method="POST" onsubmit="return validate()" id="form-login">
+            <h1 class="form-heading">Đăng nhập</h1>
+            <div class="form-group">
+                <i class="far fa-user"></i>
+                <input type="text" name="username" id="username"class="form-input" placeholder="Tên đăng nhập"autocomplete="off" autofocus/>
+            </div>
+            <div class="form-group">
+                <i class="fas fa-key"></i>
+                <input type="password" name="password" id="password" class="form-input" placeholder="Mật khẩu">
+                <div id="eye">
+                    <i class="far fa-eye"onclick="daoTT()"></i>
+                    <script>
+                        function daoTT() {
+                            var mk = document.getElementById("password");
+                            mk.type = (mk.type === "password")? "text":"password";
+                        }  
+                        </script>
+                </div>
+            </div>
+            <a class="forget" href="#">Quên mật khẩu</a>
+            <input type="submit" value="Đăng nhập"  class="form-submit">
+            
+            
+            <a class="registration" href="./registration.html">Đăng ký</a>
+        </form>
+    </div>
+    <footer class="end">
+        <div class="longh">
+            <h4><b>LONGH</b></h4>
+            <p>
+                <i class="fa-solid fa-chess-king"></i> CEO LONGDZ<br />
+                <i class="fa-solid fa-mobile-button"></i> 079.345.8888 <br />
+                <i class="fa-solid fa-envelope"></i> longdzsieucapvutru@gmail.com <br />
+            </p>
+        </div>
+
+        <div class="lienhe">
+            <h4>Liên hệ</h4>
+            <nav>
+                <ul>
+                    <i class="fa-solid fa-location-dot"></i>
+                    CS1:Kim Bảng- Hà Nam
+                    <br />
+                    <i class="fa-solid fa-location-dot"></i>
+                    CS2:Bắc Từ Liêm-Hà Nội
+                    <br />
+                    <i class="fa-solid fa-location-dot"></i>
+                    CS3:Đông Anh-Hà Nội
+                    <br />
+                    <i class="fa-solid fa-truck"></i>
+                    SHIP COD toàn quốc
+                    <br />
+                    <i class="fa-solid fa-gift"></i>
+                    FFEESHIP đơn từ 500.000đ
+                    <br />
+                </ul>
+            </nav>
+        </div>
+
+        <div class="chinhsach">
+            <h4>Chính sách</h4>
+            <nav>
+                <ul>
+                    <a href="./chinhsachdoitra.html">Chính sách đổi trả</a>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="dangky">
+            <h4>Đăng ký nhận tin</h4>
+            <address>
+                <p>
+                    Nhận thông tin sản phẩm mới nhất, tin khuyến mãi và nhiều hơn nữa.
+
+                </p>
+                <input type="email" value="" placeholder="Enter Email"><br>
+
+                <p class="btn"><a class="dangki" href="#">Đăng ký</a></p>
+                
+            </address>
+
+        </div>
+    </footer>
+</body>
+</html>
+</body>
+</html>
